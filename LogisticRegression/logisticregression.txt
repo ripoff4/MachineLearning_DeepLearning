@@ -1,0 +1,45 @@
+Logistic Regression -
+
+    Mainly used for Binary Classification Problems
+
+    Linear Regression problems are customed to outliers and make a model that even is not accurate with training data
+    and value range from -inf to +inf but classification problem require 0 or 1.
+
+    It uses formula (1/1+e^-z) which makes sure it lies in range 0 to 1 and if >0.5 then 1 else 0
+
+    here z iz y = mx+c problem only. The either side of line are 0 and 1.
+
+Metrics - 
+    
+    Confusion matrix - gives us all the TP,TN,FP,FN
+    
+    accuracy - TP+TN/FP+FN+TP+TN
+
+    precision - TP/TP+FP
+
+    recall - TP/TP+FN
+
+One Versus Rest - 
+
+    When Using Logistic Regression in Multi Class Classification problem
+
+    One Versus Rest there takes the output as one and remaining all as other output
+
+    EX: O1,O2,O3 are there in which the model takes first O1 as one output and O2,O3 as other output combined
+    and then predict the chance of O1. then do the same with reming two and which value is higher gets chosen.
+
+Parameters - 
+
+    C-Score
+
+    class_weight - for imbalanced datasetS
+
+    penalty - for ridge,lasso,elastic net . default = ridge
+
+    solver - optimization
+
+CrossValidation -
+
+    GridSearchCV
+
+    RandomizedsearchCV - when GridSearchCV takes a lot of time.
