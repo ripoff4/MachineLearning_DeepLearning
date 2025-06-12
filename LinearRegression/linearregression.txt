@@ -1,0 +1,84 @@
+Simple Linear Regression
+
+In Simple Linear Regression we have one dependent and one Independent Variables.
+We need to find the Relation between the two and train the model to make a best fit line.
+
+The Best fit line give a straight line equation of y = m*x+c
+where
+    y is our predicted value
+    m is the corelation of dependent and independent values
+    x is the independent value
+    c is the bias needed for optimal model
+
+Gradient Descent-
+The gradient descent is a curve of error that changes on changing values of m. The curve reaches a minimum point at a-
+value of m and it is considered final.
+
+Covergence Algorithm-
+The convergence algorithm is the optiml way to finding the m value using gradient descent.
+It is done my using the formula 
+    m = m -(alpha)*(slope of gradient descent) where alpha is learning rate.
+
+Multiple Linear Regression
+
+In Multiple Linear Regression there are more than one independent variables and it is the onllu change from Simple-
+Linear Regression.
+
+
+Metrics-
+
+MSE,MAE,RMSE
+    MSE is sum of error^2 and is most affected by outliers
+    MAE is sum of error and is not that much affected by outliers
+    RMSE is same as MSE but more Comparative as values are same units as input whereas in MSE it si unit^2.
+
+Overfitting and Underfitting- 
+    Overfitting means that the model is super close to the training data that when we test with new data the accuracy
+    dips by a large margin than training dataset.It is to be avoided
+
+    Underfitinng means that the model shows poor accuracy in training data itself and should be optimized to increase
+    accuracy.
+
+Polynomial Regression-
+
+    Regular Linear Regression is a Polynoial Regression of degree 1
+
+    PolynomialRegression(degree n) = mx^n+mx^(n-1)+...+c
+
+
+Ridge Regression - 
+
+    If a model is Overfitting then Ridge Regression is used to Reduce the accuracy in training data.
+
+    it goes like y = CostFunction + (alpha)(slope of gradient descent)^2
+
+    This equation reduces the coefficents and reduces overall accuracy by changing the graph.
+
+Lasso Regression -
+
+    If a model has many features then Lasso Regresion is used to Reduce no.of Features
+
+    it goes like y = CostFunction + (alpha)(slope of gradient descent)
+
+    This equates reduces coefficients so low that that feature is diminished.
+
+Cross Validation -
+
+    There are 4 types of Cross Validation:
+
+    1.Single Cross Validation
+
+        Here only a single element is validation and remaining are training and give avg.loss
+
+    2.K Fold Cross Validation
+
+        Here it is just like Single Cross Validation but we take K elements than single element
+    
+    3.Stratified Cross Validation
+
+        Here we split train and validation into same ratio of classes like 6:4 in 1,0
+
+        Used in classifications problems
+    
+    4.Time Series Cross Validatio
+
