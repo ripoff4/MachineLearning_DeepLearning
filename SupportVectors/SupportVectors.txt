@@ -1,0 +1,47 @@
+Support Vector Machines-
+
+    Support Vector Machines is Used For Both Classification And Regression Problems.
+
+    The Basic Understanding of Support Vector Machines is that when a model is run it creates an best fit line
+    along with a margin of error giving it so it can precisely classify things.
+
+Soft Margin & Hard Margin-
+
+    Soft margin is when there are data points lying in the margin of error
+    In Case of Soft margin we add additional parameters to cost function as given
+        (no.of params can we ignore)*(summation of distance of all the misplaced points to their respective moe line)
+
+    Hard margin is when there are no data points lying in the margin of error
+
+Maths intuition -
+
+    The best fit line of the model is taken as :    w*x + b = 0 
+    
+    and margin of error is bound by lines :     w*x+b=1 & w*x+b=-1 lines
+
+    by subtracting the both moe lines we get :      (x1-x2) = 2/w where 2/w is cost function
+
+    here we should maximize 2/w as it is moe distance and in SVM we generally  want moe to be as big as possible
+
+
+
+Support Vector Regression -
+
+    It is the same as Classification problem but we choose to take only data points which lie inside of moe
+    rather than outside of moe
+
+    it also has soft margin and hard margin and alongside with it when soft margin case it follows the same
+    rules it does in Classification.
+
+Support Vector Kernels - 
+
+    If a Linear SVC is not satisfied to split all the data points and make a best fit line we add another dimension to
+    it to make it possible.
+
+    There are 3 types of Kernels:
+
+        1.Polynomial Kernel - It squares all your input and output datsrt to seperate them
+
+        2.RBF Kernel
+
+        3.Sigmoid Kernel
