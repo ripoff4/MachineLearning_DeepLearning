@@ -72,7 +72,8 @@ Cross Validation -
 
     2.K Fold Cross Validation
 
-        Here it is just like Single Cross Validation but we take K elements than single element
+        Here it is just like Single Cross Validation but we take K elements than single element.For Classification
+        problem only
     
     3.Stratified Cross Validation
 
