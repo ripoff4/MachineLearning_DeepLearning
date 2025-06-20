@@ -1,0 +1,27 @@
+Naive Bayes-
+
+    This is used for both binary or multi-class Classification
+
+    They use the equation 
+
+            P(o1/(if1,if2)) = P(o1) * P(o1/f1) * P(o1/f2)
+            P(o2/(if1,if2)) = P(o2) * P(o2/f1) * P(o2/f2)
+
+            and P(o1 for if1 and if2) = P(o1/(if1,if2)) / P(o2/(if1,if2))
+            and P(o2 for if1 and if2) = P(o2/(if1,if2)) / P(o1/(if1,if2))
+        
+    BY above procedures you get your probabilities
+
+Naive bayes Variants-
+
+        Gaussian Naive Bayes-
+
+                It is used when a normal distribution is observed in independent features
+        
+        Bernoulli Distribution -
+
+                It is used when the independent features are either binary
+        
+        Multinomial Distribution - 
+
+                It is used when the independent features are "text"
