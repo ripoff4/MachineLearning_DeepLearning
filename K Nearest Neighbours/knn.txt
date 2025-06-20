@@ -1,0 +1,21 @@
+K Nearest Neighbours-
+
+    Here We can do it for both Regression and Classification problems
+
+    In Classification-
+
+        In Classification what we do is find the output values for all the K numbers that are close
+        to "Predicted output value".Then we compare how many of those K neighbours are which class 
+        and the one output with more neighbours is declared as output of the model.
+    
+    In Regression-
+
+        Same as Classification but we take the average of all K neighbours
+    
+Variations in KNN-
+
+    1.KD Tree - here we take all the x-axis values and y-axis values of all points and then take median and divide
+                it into parts that every point is sepearated and then make a tree out of it.When a point is given
+                we take it region and its point,traverse K elemts by using tree and find K nearest neighbours
+
+    2.Ball Tree - same as KD Tree but we take as ball.Slighly confusing
