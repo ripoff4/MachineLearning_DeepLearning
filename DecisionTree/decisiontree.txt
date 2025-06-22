@@ -1,0 +1,40 @@
+Decision Tree-
+
+    Here we need to make a decision tree based on data .
+
+    We use Entropy,Gini Index to know about the type of split happened
+
+    Entropy for when data size is small and gini index for when dataset is large
+
+    we use information gain to know about the feature needed to be splitted first
+
+    The decision Tree is Expanded until a leaf node is achieved.A leaf node is a decision where if a datapoint
+    lands gives you a outcome.
+
+Entropy & Gini Impurity-
+
+    Entropy = -(p1)log(p1)-(p2)log(p2) #max value 1
+    Gini impurity = (p1)^2+(p2)^2 #max value 2
+
+    These are calculated to learn if the split is pure/impure split
+
+Information Gain-
+
+    Information gain = Entropy(root) - sum of(entopy(root1)*(root1_elements/root2_elements))
+
+Pre Pruning & Post Pruning- (for OverFitting Purpose)
+
+    Post Pruning means Complete the decision tree and then make an depth_size and count decision tree until the
+    depth_size
+
+    Pre Pruning is just HyperParameter Tuning(GridSearchCV)
+
+Decision Tree Regression-
+
+    In decision tree regression rather than using Information Gain we use Variance Reduction
+
+    variance_reduction = (1/n)(sum of(mean squared error))
+
+    for feature_selection  = var_red(root) - sum of(weights*vaiance_red(child)) where weights = ((p+n)(child1)/(child2))
+
+    where feature_selection is less is taken
