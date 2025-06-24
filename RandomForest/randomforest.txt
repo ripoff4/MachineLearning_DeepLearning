@@ -1,0 +1,14 @@
+Baggind and Boosting ensemble techniques:
+
+    Ensemble Techniques : Multiple ML models are combined to one model.
+
+    Bagging : In this different ML models(Linear,SVM,KNN,DecisionTree,Naive) are given its own value
+              and majority is taken for Classification and Average for Regression
+    
+    Boosting : In this different weak ML models are joined together to give an Strong ML model.
+
+Random Forest:
+
+    In Random Forest we use Bagging Ensemble technique with only DecisionTree models.
+
+    By using Random Forest we Reduce the Overfitting problem in DT
