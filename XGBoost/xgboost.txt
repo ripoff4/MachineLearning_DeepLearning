@@ -1,0 +1,23 @@
+XGBoost-
+
+    This is a Boosting Problem
+
+    Here first we set probabilty as PR = 1/(different output variables)
+
+    After that we see it as y_pred and calculate residuals
+
+    Then use it as output and make a decision tree
+
+    This decision is spilt by "Gain" and this is not "Information Gain" used in DT.
+
+    Gain = significant value(childs) - significant value(parent)
+
+    Significant value = sum of(residuals)^2 / pr(1-pr)
+
+    if a dt has significant value < pr(1-pr) we prune it to that level
+
+    the split and feature selection is done using the one with less significant value
+
+    The  with this output we calculate the y_pred and get another residuals
+
+    This residual is used for next decisoj tree used and cycle continues.
