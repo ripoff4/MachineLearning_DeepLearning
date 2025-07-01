@@ -1,0 +1,15 @@
+Gradient Boost-
+
+    In Regression techinique-
+        
+        First we take average of output variable and take residual from every data point using avg as y_pred
+
+        using avg as output we will train a model and get a *y_pred(1)
+
+        add that y_pred to avg and it will give some value
+
+        One Weak model is now ready
+
+        Now continue the process keeping avg same.
+
+        here formula is y_pred = y_actual - (alpha)*(*y_pred(1))
