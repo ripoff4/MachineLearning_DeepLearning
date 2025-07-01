@@ -1,0 +1,14 @@
+Curse of Dimensionality-
+
+    It states as increased features the weight of important features decreases and makes the
+    model unreliable.
+
+    We use PCA to remove unnecessary features.
+
+Feature Extraction-
+
+    It merges two or more features to Single Feature
+
+Feature Selection-
+
+    It is process to select a few features from dataset that have more weightage
