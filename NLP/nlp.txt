@@ -24,3 +24,7 @@ Lemmatization-
 
         then use that in lemmatizer.lemma(token,wordnet_tag)
 
+StopWords-
+
+    Common words like is,the etc which are to be removed from dataset for optimization
+
