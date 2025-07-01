@@ -1,0 +1,26 @@
+Tokenization-
+
+    In Tokenization we Have
+    1)Corpus(Paragraph) 
+    2)Document(Sentence)
+    3)Vocalbulary(Unique Words)
+
+
+    Coding-
+
+        Use sent_tokenize for converting to sentences.
+
+        Use word_tokenize for converting to words.
+
+Lemmatization-
+
+    It converts the words into root words for better processing the text.
+
+    Coding-
+
+        Use "Parts of Speech" Tagger to tag words
+
+        Use nltk to find pos_tag(token) and semd it to function
+
+        then use that in lemmatizer.lemma(token,wordnet_tag)
+
