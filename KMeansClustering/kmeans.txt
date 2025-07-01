@@ -1,0 +1,24 @@
+K Means Clustering-
+
+    In K Means we find intialize as K as no.of groups we want in our dataset.
+
+    Then we randomly assign 2 centroid in the dataset
+
+    We create a line at the centroid and 1 Perpendicular line to this line
+
+    The 2 Sides of Lines are 2 Different groups
+
+    Then mark the ponts of either side as respective group
+
+    Then move the centroid by averaging all the points
+
+    Then do the process again of making a line,Perpendicualr line and segmenting until there is a lines
+    that do not have any errors in grouping .
+
+    Note: If a group1 point of previous iteration is now in group2 side.group1 point becomes group2
+
+    How to Find the K Value-
+
+        We Keep a graph of (sum of total distance of all points to nearest centroid) in various k values
+        
+        ranging 1 to n . we take a k value where we see the k value graph is stagnating. 
