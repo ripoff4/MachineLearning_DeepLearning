@@ -28,3 +28,61 @@ StopWords-
 
     Common words like is,the etc which are to be removed from dataset for optimization
 
+Bag of Words-
+
+    Mking a list of all the words in a sentence is called bag of words
+
+TFIDF -
+ 
+    It gives us the same dataframe as CountVectorize but instead of count wwe have to make a calculation.
+
+    The calcualtion is TF(word)*IDF(sentence containing word)
+
+    Term Frequency = (count of word in a sentence) / (count of total world in the sentence)
+
+    Inverse Document Frequency = (total sentences) / (count of sentences containing word)
+
+Word Embeddings-
+
+    Used For Sentiment analysis
+
+    used for finding Similarity of Words
+
+    Word2Vec-
+
+        It is a process done in word embeddings
+
+        In it we make a sparse matrix of different features name to different types of feature
+
+        eg;
+                Boy Girl King Queen
+        Gender  1    -1   0.92 -0.92
+        Age     0.03 0.03 0.05 0.06
+
+
+        Here from this this we calculate similarity of Bot in context of Gender,age as 1,0.03 and for all features
+
+        Boy is a gender thing and gives a value 1 and 0.03 as it is not that much related to Age
+
+        Why is it useful-
+
+            For Finding what happens if we [Boy-King+Girl] = Queen as rhe numbers add up
+
+            We can find the similarity of words just by Adding their values.
+
+
+AvgWord2Vec-
+
+    In this technique we usse a process in which we find a sparse matrix using all the sentences
+
+    Then it gives us a output matrix then the matrix is used for deep learning model to predict a value
+
+    The output matrix is the average of all the numeric values of all the words in sentence for every dimension.
+
+Google Word2Vec Pretrained Model-
+
+    !pip install genshim
+
+    from genshim.downloader import api
+
+    wv = api.load("word2vec-google-news-300")
